@@ -11,14 +11,14 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-@Tag("properties")
+
 public class BrowserstackMobileDriver implements WebDriverProvider {
 
     public static MobileConfig mobileConfig = ConfigFactory.create(MobileConfig.class);
 
-    static String user = mobileConfig.user();
-    static String key = mobileConfig.key();
-    static String url = mobileConfig.url();
+    String user = mobileConfig.user();
+    String key = mobileConfig.key();
+    String url = mobileConfig.url();
     static String remoteurl = mobileConfig.remoteUrl();
 
 
