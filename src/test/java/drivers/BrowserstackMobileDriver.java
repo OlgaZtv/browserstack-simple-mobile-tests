@@ -4,12 +4,14 @@ import com.codeborne.selenide.WebDriverProvider;
 import io.appium.java_client.android.AndroidDriver;
 import mobileConfig.MobileConfig;
 import org.aeonbits.owner.ConfigFactory;
+import org.junit.jupiter.api.Tag;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 
+@Tag("properties")
 public class BrowserstackMobileDriver implements WebDriverProvider {
 
     public static MobileConfig mobileConfig = ConfigFactory.create(MobileConfig.class);
