@@ -18,7 +18,6 @@ import static io.qameta.allure.Allure.step;
 @Story("Android tests")
 @Feature("Android: Selenide tests")
 @Tag("selenide_android")
-@Tag("selenide_android")
 public class BrowserStackAndroidSelenideTests extends TestBase {
 
 
