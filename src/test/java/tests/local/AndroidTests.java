@@ -15,6 +15,9 @@ public class AndroidTests extends TestBase {
                 .shouldHave(text("The Free Encyclopedia …in over 300 languages"));
         $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
         $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView"))
+                .shouldHave(text("New ways to explore"));
+        $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
+        $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView"))
                 .shouldHave(text("Reading lists with sync"));
         $(MobileBy.id("org.wikipedia.alpha:id/fragment_onboarding_forward_button")).click();
         $(MobileBy.id("org.wikipedia.alpha:id/primaryTextView"))
