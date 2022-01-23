@@ -29,7 +29,7 @@ public class RunHelper {
             case "selenoid":
                 return SelenoidAndroidDriver.class;
             case "null":
-                return new NullPointerException();
+                throw new NullPointerException();
             default:
                 throw new RuntimeException("Incorrect device host");
         }
